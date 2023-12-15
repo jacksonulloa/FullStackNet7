@@ -1,0 +1,60 @@
+@use '../../../assets/styles/colors.scss';
+
+.root {
+	display: flex;
+	height: 100%;
+}
+
+.container {
+	display: flex;
+  flex-direction: column;
+	align-items: center; // Centra horizontalmente
+  justify-content: center; // Centra verticalmente
+	align-items: center;
+	height: 100%;
+
+	&__card {
+		height: 370px;
+		text-align: center;
+
+		h4 {
+			color: colors.$primary-color;
+      margin: 0; // Añade esto para eliminar los márgenes predeterminados
+		}
+
+		.content {
+			justify-content: space-between;
+      align-items: center; // Centra verticalmente los elementos dentro de .content
+			height: 100%;
+
+			&__login {
+				gap: 1em;
+				:nth-child(1) {
+					color: colors.$accent-color;
+					font-size: 12px;
+					cursor: pointer;
+				}
+			}
+
+			&__register {
+        align-items: center; // Centra verticalmente los elementos dentro de estas secciones
+				padding-top: 1em;
+				font-size: 12px;
+				:nth-child(1) {
+					color: blue;
+				}
+				:nth-child(2) {
+					padding-left: 5px;
+					color: colors.$accent-color;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+.mat-form-field {
+  display: block;
+  margin-bottom: 10px; /* Agrega un margen inferior para separar los campos */
+  width: 100%; /* Asegura que ocupa todo el ancho disponible */
+}

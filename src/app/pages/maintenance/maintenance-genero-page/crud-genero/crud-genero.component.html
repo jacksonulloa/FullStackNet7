@@ -1,0 +1,29 @@
+<form class="crud flex-column" autocomplete="off" [formGroup]="eventsService.eventsFormGroup" (ngSubmit)="clickSave()">
+	<div class="crud__elements">
+		<div class="fields flex-column">
+      <br>
+      <br>
+
+
+			<mat-form-field class="example-full-width" appearance="outline">
+				<mat-label>Nombre</mat-label>
+				<input matInput formControlName="nombre"/>
+				<mat-error *ngIf="eventsService.nombreField.hasError('required')">Este campo es requerido</mat-error>
+			</mat-form-field>
+
+			<mat-form-field appearance="outline">
+				<mat-label>Estado</mat-label>
+				<mat-select formControlName="estado">
+					<mat-option [value]="1"> ACTIVO </mat-option>
+					<mat-option [value]="0"> INACTIVO </mat-option>
+				</mat-select>
+				<mat-error *ngIf="eventsService.estadoField.hasError('required')">Este campo es requerido</mat-error>
+			</mat-form-field>
+
+			<button mat-raised-button color="primary" type="submit">GUARDAR</button>
+
+			<button mat-raised-button color="accent" type="button" (click)="clickClear()">LIMPIAR</button>
+		</div>
+
+	</div>
+</form>

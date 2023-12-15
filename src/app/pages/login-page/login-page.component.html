@@ -1,0 +1,94 @@
+<!--<mat-card class="root flex-column">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Shiba Inu</mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>-->
+<!--<div class="root flex-column">
+	<h2>Hecho para gamers!</h2>
+	<div class="container">
+		<mat-card class="container__card custom-card flex-column">
+			<mat-card-title><h4>INICIO DE SESION</h4></mat-card-title>
+			<mat-card-content>
+				<form class="content flex-column" autocomplete="off">
+					<mat-form-field appearance="outline">
+						<mat-label>E-mail</mat-label>
+						<input matInput type="email" autocomplete="off" min="1" formControlName="email" />
+						<mat-error>EL email es requerido</mat-error>
+						<mat-error>Ingrese un E-mail valido</mat-error>
+					</mat-form-field>
+					<mat-form-field appearance="outline">
+						<mat-label>Contraseña</mat-label>
+						<input matInput type="password" autocomplete="off" min="1" formControlName="password" />
+						<mat-error>Ingrese su contraseña</mat-error>
+					</mat-form-field>
+
+					<div class="content__login flex-column">
+						<span [routerLink]=""> ¿Olvidaste tu contraseña?</span>
+						<button mat-raised-button color="primary" [disabled]="">
+							INGRESAR
+						</button>
+					</div>
+
+					<div class="content__register">
+						<span>Si no tienes una cuenta</span>
+						<a [routerLink]="">regístrate</a>
+					</div>
+				</form>
+			</mat-card-content>
+		</mat-card>
+	</div>
+</div>-->
+<div class="root flex-column">
+  <div class="container flex-column">
+    <h2 class="centered-text">Hecho para gamers!</h2>
+    <mat-card class="container__card custom-card flex-column">
+      <mat-card-title>
+        <h4>INICIO DE SESION</h4>
+      </mat-card-title>
+      <mat-card-content>
+        <form class="content flex-column" autocomplete="off">
+          <div>
+            <mat-form-field appearance="outline">
+              <mat-label>E-mail</mat-label>
+              <input matInput type="email" value="jackson.auj@gmail.com" />
+              <mat-error>EL email es requerido</mat-error>
+              <mat-error>Ingrese un E-mail valido</mat-error>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline">
+              <mat-label>Contraseña</mat-label>
+              <input matInput type="password" value="*pass123" />
+              <mat-error>Ingrese su contraseña</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="content__login flex-column">
+            <span [routerLink]=""> ¿Olvidaste tu contraseña?</span>
+            <br>
+            <button mat-raised-button color="primary" [disabled]="" (click)="clickLogin($event)">
+              INGRESAR
+            </button>
+          </div>
+          <div class="content__register">
+            <span>Si no tienes una cuenta</span>
+            <a [routerLink]="">regístrate</a>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

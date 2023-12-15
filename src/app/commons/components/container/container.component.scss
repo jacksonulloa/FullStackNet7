@@ -1,0 +1,28 @@
+@use '../../../../assets/styles/colors.scss';
+@import 'components/footer/footer.component.scss';
+@import 'components/header/header.component.scss';
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+
+  .header {
+    @extend .header; // Aplica los estilos del encabezado
+  }
+
+  main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    margin-top: 100px;
+    width: 100%;
+    justify-content: center; // Solo funcionará si el contenedor es un elemento flex
+    align-items: center; // Alinea el contenido verticalmente
+  }
+
+  .footer {
+    @extend .footer; // Aplica los estilos del pie de página
+  }
+}

@@ -1,0 +1,10 @@
+@use '../../../assets/styles/colors.scss';
+
+.container {
+	display: flex;
+	gap: 2em;
+	&__menu {
+		display: flex;
+		justify-content: center;
+	}
+}

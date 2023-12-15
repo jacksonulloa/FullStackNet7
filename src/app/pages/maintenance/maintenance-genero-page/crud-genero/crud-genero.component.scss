@@ -1,0 +1,25 @@
+
+::ng-deep {
+	.mat-select-value-text {
+		color: white;
+	}
+}
+.crud {
+	padding: 2em;
+	justify-content: center;
+	align-items: center;
+
+	&__elements {
+		display: flex;
+		gap: 2em;
+		justify-content: space-between;
+		width: 100%;
+
+		.fields {
+			gap: 10px;
+			width: 100%;
+		}
+
+
+	}
+}

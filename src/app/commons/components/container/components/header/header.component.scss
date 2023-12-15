@@ -1,0 +1,65 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #3498db;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 100;
+
+  &.sticky-header { /* Estilos para la clase sticky-header */
+    padding: 10px;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        margin-right: 20px;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+
+          &.active {
+            color: #ff5733;
+          }
+        }
+      }
+    }
+  }
+
+  .header-right {
+    display: flex;
+
+    .header-link {
+      text-decoration: none;
+      color: #fff;
+      margin-left: 20px;
+    }
+
+    .header-link:hover {
+      color: #ff5733; /* Cambia el color al pasar el cursor sobre el enlace */
+    }
+  }
+
+  /* Estilos responsive */
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+  }
+}
